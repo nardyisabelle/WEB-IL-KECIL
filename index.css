@@ -1,0 +1,467 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgrey;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #8d5e21;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffc107;
+  color: #65390d;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #8d5e21;
+  min-width: 150px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Content Layout */
+.content-layout {
+  display: grid;
+  grid-template-columns: 25% 50% 25%; /* Side, Main, Side */
+  gap: 20px; /* Space between columns */
+  padding: 40px;
+}
+
+.content-layout .side {
+  text-align: center;
+  background-color: #f9e0d9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.content-layout .main {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between elements inside main */
+}
+
+/* Styling for the main heading */
+.content-layout .main h1 {
+  font-size: 24px; /* Adjust font size for better readability */
+  color: #8d5e21;
+  margin-bottom: 5px; 
+  
+}
+
+/* Styling for paragraphs in the main content */
+.content-layout .main p {
+  text-align: justify;
+  line-height: 1.6; /* Line height for better readability */
+  margin-bottom: 5px; /* Space between paragraph and other elements */
+  margin-top: 0px;
+}
+
+/* Styling for images inside the side sections */
+.content-layout .side img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Space above and below the image */
+  pointer-events: none; /* Prevent any interactions */
+  border-radius: 8px; /* Add slight rounding for a clean look */
+}
+
+/* Add space between side section title and the image */
+.content-layout .side h3 {
+  margin-bottom: 15px; /* Space between "Gambar" title and the image */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #8d5e21;
+  color: white;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+footer h3 {
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #8d5e21;
+  color: white;
+  padding: 20px;
+  margin-top: 70px;
+}
+
+footer h3 {
+  margin-bottom: 5px;
+}
+
+/* Pendahuluan PKN */
+.pendahuluan {
+  display: flex; /* Create side-by-side layout */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between text and image */
+  padding: 1.5rem 2rem; /* Add padding around the section */
+  background-color: #f4f9fc; /* Light background for readability */
+  border-radius: 8px; /* Rounded corners for a polished look */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Space below the section */
+}
+
+/* Pendahuluan Text Container */
+.pendahuluan .text {
+  flex: 2; /* Text container takes more space */
+}
+
+/* Pendahuluan Heading */
+.pendahuluan h1 {
+  font-size: 28px; /* Larger font for section title */
+  font-family: 'Arial', sans-serif; /* Match general font style */
+  color: #8d5e21; /* Complementary color to match navigation */
+  text-align: left; /* Align the heading to the left */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+/* Pendahuluan Paragraphs */
+.pendahuluan p {
+  font-size: 16px; /* Font size for readability */
+  font-family: 'Arial', sans-serif; /* Match general font style */
+  color: #333; /* Consistent text color */
+  text-align: justify; /* Align text evenly on both sides */
+  line-height: 1.6; /* Improve line spacing for readability */
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+/* Pendahuluan Image */
+.pendahuluan img {
+  flex: 1; /* Image takes less space */
+  max-width: 100%; /* Responsive image width */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #8d5e21; /* Border color matches navigation */
+  border-radius: 8px; /* Rounded corners for consistency */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Subtle shadow for image */
+}
+.pendidikan {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 30px; 
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+   
+}
+.pendidikan .text_pendahuluan{
+  flex: 2;
+}
+.pendidikan img {
+  flex: 1; /* Image takes less space */
+  max-width: 100%; /* Responsive image width */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #8d5e21; /* Border color matches navigation */
+  border-radius: 8px; /* Rounded corners for consistency */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Subtle shadow for image */
+}
+
+.pendidikan p {
+  font-size: 16px; /* Font size for readability */
+  font-family: 'Arial', sans-serif; /* Match general font style */
+  color: #333; /* Consistent text color */
+  text-align: justify; /* Align text evenly on both sides */
+  line-height: 1.6; /* Improve line spacing for readability */
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+/*Kerja sama Pkn */
+.content-pkn {
+  display: grid;
+  grid-template-columns: 40% 20% 40%; /* Side, Main, Side */
+  gap: 20px; /* Space between columns */
+  padding: 40px;
+}
+
+.content-pkn .side-pkn {
+  text-align: center;
+  background-color: #f9e0d9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+.content-pkn .main-pkn {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between elements inside main */
+}
+
+
+/* Styling for paragraphs in the main content */
+.content-pkn .main-pkn p {
+  text-align: left;
+  line-height: 1.6; /* Line height for better readability */
+  margin-top: 10px;
+  margin-bottom: 150px;
+
+}
+
+/* Styling for images inside the side sections */
+.content-pkn .side-pkn img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Space above and below the image */
+  pointer-events: none; /* Prevent any interactions */
+  border-radius: 8px; /* Add slight rounding for a clean look */
+}
+
+/* Add space between side section title and the image */
+.content-pkn .side-pkn h5 {
+  margin-bottom: 15px; /* Space between "Gambar" title and the image */
+  font-size: 20px;
+  color: black;
+  text-align: left;
+}
+.content-pkn .side-pkn h3 {
+  margin-bottom: 15px; /* Space between "Gambar" title and the image */
+  font-size: 30px;
+  color: black;
+  text-align: left;
+}
+/* kerja sama PKN */
+.kerjasama_pkn{
+  display: flex; /* Create side-by-side layout */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between text and image */
+  padding: 1.5rem 2rem; /* Add padding around the section */
+  background-color: #f4f9fc; /* Light background for readability */
+  border-radius: 8px; /* Rounded corners for a polished look */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Space below the section */
+}
+
+/* Pendahuluan Text Container */
+.kerjasama_pkn .text_pkn {
+  flex: 2; /* Text container takes more space */
+}
+
+/* Pendahuluan Paragraphs */
+.kerjasama_pkn p {
+  font-size: 16px; /* Font size for readability */
+  font-family: 'Arial', sans-serif; /* Match general font style */
+  color: #333; /* Consistent text color */
+  text-align: justify; /* Align text evenly on both sides */
+  line-height: 1.6; /* Improve line spacing for readability */
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+/* Pendahuluan Image */
+.kerjasama_pkn img {
+  flex: 1; /* Image takes less space */
+  max-width: 100%; /* Responsive image width */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #8d5e21; /* Border color matches navigation */
+  border-radius: 8px; /* Rounded corners for consistency */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Subtle shadow for image */
+}
+
+/* SDGS IPS */
+.sdgs-ips {
+  display: grid;
+  grid-template-columns: 50% 50%; /* Membagi menjadi dua kolom sama rata */
+  gap: 20px; /* Memberikan jarak antara kolom */
+  padding: 40px;
+}
+
+/* Gaya untuk teks dan kontainer teks */
+.sdgs-ips .side-ips {
+  text-align: left; /* Meratakan teks ke kiri */
+  background-color: #f9e0d9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  line-height: 1.6; /* Memberikan jarak baris agar teks lebih mudah dibaca */
+  font-size: 16px; /* Ukuran font default */
+  font-family: Arial, sans-serif; /* Gunakan font standar */
+}
+
+/* Styling untuk gambar dalam kontainer teks */
+.sdgs-ips .side-ips img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Jarak vertikal untuk gambar */
+  pointer-events: none; /* Mencegah interaksi pada gambar */
+  border-radius: 8px; /* Rounding sudut gambar */
+}
+
+/* Gaya untuk judul dan paragraf */
+.sdgs-ips .side-ips h5,
+.sdgs-ips .side-ips p,
+.sdgs-ips .side-ips h3 {
+  margin-bottom: 15px;
+  text-align: left; /* Meratakan semua teks ke kiri */
+  font-weight: normal; /* Mengatur font-weight default untuk teks */
+}
+/*kerjasama IPS*/
+.kerjasama-ips {
+  display: flex; /* Create side-by-side layout */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between text and image */
+  padding: 1.5rem 2rem; /* Add padding around the section */
+  background-color: #f4f9fc; /* Light background for readability */
+  border-radius: 8px; /* Rounded corners for a polished look */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Space below the section */
+}
+.kerjasama-ips .text-kerjasamaips {
+  flex: 2; /* Text container takes more space */
+}
+.kerjasama-ips h1 {
+  font-size: 28px; /* Larger font for section title */
+  font-family: 'Arial', sans-serif; /* Match general font style */
+  color: #8d5e21; /* Complementary color to match navigation */
+  text-align: left; /* Align the heading to the left */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+.kerjasama-ips p {
+  font-size: 16px; /* Font size for readability */
+  font-family: 'Arial', sans-serif; /* Match general font style */
+  color: #333; /* Consistent text color */
+  text-align: justify; /* Align text evenly on both sides */
+  line-height: 1.6; /* Improve line spacing for readability */
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+.unicef-ips{
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 30px; 
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+   
+}
+.unicef-ips .text_unicef{
+  flex: 2;
+}
+
+.unicef-ips p {
+  font-size: 16px; /* Font size for readability */
+  font-family: 'Arial', sans-serif; /* Match general font style */
+  color: #333; /* Consistent text color */
+  text-align: justify; /* Align text evenly on both sides */
+  line-height: 1.6; /* Improve line spacing for readability */
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+.tujuan-sdgs {
+  display: flex; /* Create side-by-side layout */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between text and image */
+  padding: 1.5rem 2rem; /* Add padding around the section */
+  background-color: #f4f9fc; /* Light background for readability */
+  border-radius: 8px; /* Rounded corners for a polished look */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Space below the section */
+}
+.tujuan-sdgs .text-tujuansdgs {
+  flex: 2; /* Text container takes more space */
+}
+
+.tujuan-sdgs p {
+  font-size: 16px; /* Font size for readability */
+  font-family: 'Arial', sans-serif; /* Match general font style */
+  color: #333; /* Consistent text color */
+  text-align: justify; /* Align text evenly on both sides */
+  line-height: 1.6; /* Improve line spacing for readability */
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+
+/* General Style for Smaller Images */
+.kerjasama-ips img,
+.unicef-ips img,
+.tujuan-sdgs img {
+  flex: 1; /* Image still takes less space compared to text */
+  max-width: 200px; /* Restrict the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border: 2px solid #8d5e21; /* Border color for consistency */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+/* Additional Styling for Specific Images */
+.unicef-ips img {
+  max-width: 150px; /* Set a smaller maximum width for UNICEF images */
+}
+
+.tujuan-sdgs img {
+  max-width: 180px; /* Slightly larger width for "tujuan SDGs" */
+}
+
+
